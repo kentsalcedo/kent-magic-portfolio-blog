@@ -31,17 +31,19 @@ import {
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
+import { LuHouse, LuUser, LuLaptopMinimalCheck, LuBookOpenText, LuCalendarPlus } from "react-icons/lu";
+
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
   email: HiEnvelope,
   globe: HiOutlineGlobeAsiaAustralia,
-  person: PiUserCircleDuotone,
+  person: LuUser,
   grid: PiGridFourDuotone,
-  book: PiBookBookmarkDuotone,
+  book: LuBookOpenText,
   openLink: HiOutlineLink,
-  calendar: HiCalendarDays,
-  home: PiHouseDuotone,
+  calendar: LuCalendarPlus,
+  home: LuHouse,
   gallery: PiImageDuotone,
   discord: FaDiscord,
   eye: HiOutlineEye,
@@ -63,6 +65,7 @@ export const iconLibrary: Record<string, IconType> = {
   whatsapp: FaWhatsapp,
   reddit: FaReddit,
   telegram: FaTelegram,
+  laptopCheck: LuLaptopMinimalCheck,
 };
 
 export type IconLibrary = typeof iconLibrary;

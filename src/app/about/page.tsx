@@ -11,6 +11,7 @@ import {
   Meta,
   Schema,
   Row,
+  ToggleButton
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
@@ -96,9 +97,9 @@ export default function About() {
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
+              Honolulu, Hawaii
             </Row>
-            {person.languages && person.languages.length > 0 && (
+            {/* {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">
                 {person.languages.map((language, index) => (
                   <Tag key={index} size="l">
@@ -106,7 +107,7 @@ export default function About() {
                   </Tag>
                 ))}
               </Row>
-            )}
+            )} */}
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
@@ -120,9 +121,9 @@ export default function About() {
             {about.calendar.display && (
               <Row
                 fitWidth
-                border="brand-alpha-medium"
-                background="brand-alpha-weak"
-                radius="full"
+                // border="brand-alpha-medium"
+                // background="brand-alpha-weak"
+                radius="m"
                 padding="4"
                 gap="8"
                 marginBottom="m"
@@ -131,15 +132,23 @@ export default function About() {
                 style={{
                   backdropFilter: "blur(var(--static-space-1))",
                 }}
+                
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">Schedule a call</Row>
-                <IconButton
+                <Row>
+                  <Button
+                    prefixIcon="calendar"
+                    href={about.calendar.link}
+                    label="Schedule a call"
+                    size="l"
+                    data-solid="color"
+                  />
+                </Row>
+                {/* <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"
-                />
+                /> */}
               </Row>
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
