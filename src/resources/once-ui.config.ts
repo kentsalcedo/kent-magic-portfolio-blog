@@ -193,11 +193,12 @@ const schema: SchemaConfig = {
   email: "ksalcedo.dev@gmail.com",
 };
 
+// TODO: RECONFIGURE THIS
 // social links
 const sameAs: SameAsConfig = {
-  // threads: "https://www.threads.com/@once_ui",
-  // linkedin: "https://www.linkedin.com/company/once-ui/",
-  // discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://www.threads.com/@kentsalcedo",
+  linkedin: "https://www.linkedin.com/in/kentsalcedo/",
+  discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
 // social sharing configuration for blog posts
