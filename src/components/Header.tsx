@@ -13,7 +13,7 @@ import {
   IconButton,
   Column,
   Logo,
-  ElementType
+  ElementType,
 } from "@once-ui-system/core";
 
 import {
@@ -114,7 +114,11 @@ export const Header = () => {
           textVariant="body-default-s"
         >K</Row> */}
         <Row horizontal="between" paddingX="8">
-          <Row vertical="center" align="start"><ElementType href="/"><Logo icon="/images/logo.png" size="s" /></ElementType></Row>
+          <Row vertical="center" align="start">
+            <ElementType href="/">
+              <Logo icon="/images/logo.png" size="s" />
+            </ElementType>
+          </Row>
           <Row
             background="page"
             // border="neutral-alpha-weak"
@@ -130,12 +134,14 @@ export const Header = () => {
               suppressHydrationWarning
             >
               {routes["/"] && (
-                <ToggleButton
-                  prefixIcon="home"
-                  href="/"
-                  selected={pathname === "/"}
-                  label="Home"
-                />
+                <Row s={{ hide: true }}>
+                  <ToggleButton
+                    prefixIcon="home"
+                    href="/"
+                    selected={pathname === "/"}
+                    label="Home"
+                  />
+                </Row>
               )}
               {/* <Line background="neutral-alpha-medium" vert maxHeight="24" /> */}
               {routes["/about"] && (
