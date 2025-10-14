@@ -15,6 +15,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import HomeFlipHeader from "@/components/fancy/text/HomeFlipHeader";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -66,8 +67,9 @@ export default function Home() {
             </RevealFx>
           )}
           <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
+            <HomeFlipHeader />
             <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
+              {/* {home.headline} */}
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
@@ -100,7 +102,7 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
+      {/* <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
       {routes["/blog"] && (
@@ -124,7 +126,7 @@ export default function Home() {
         </Column>
       )}
       <Projects range={[2]} />
-      <Mailchimp />
+      <Mailchimp /> */}
     </Column>
   );
 }

@@ -8,7 +8,7 @@ import {
   Social,
   Work,
 } from "@/types";
-import { Line, Logo, Row, Text } from "@once-ui-system/core";
+import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Kent",
@@ -22,7 +22,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -88,9 +88,6 @@ const home: Home = {
       Lately, I've been building AI‑driven systems and workflow automations that
       help businesses get more done and help parents sneak in a nap (don't we
       all just need a nap sometimes).
-      <br />
-      <br />
-      Automating chaos since 2010.
     </>
   ),
 };
@@ -116,10 +113,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+I’m a full-stack developer and startup technologist who’s spent nearly a decade turning ambitious ideas into real-world products. From building augmented-reality retail experiences to Hawaiian language learning apps and enterprise-scale systems for HP Enterprise and NOAA, I’ve helped organizations of all sizes go from zero to one — and then scale with grace. I lead with curiosity, mentorship, and a deep respect for craft, whether I’m guiding a team through product chaos or brewing the perfect cup of coffee between commits. Based in Honolulu, I bring the same mix of pragmatism and play to every project; building things that work, matter, and (hopefully) make people smile.
       </>
     ),
   },
@@ -133,12 +127,10 @@ const about: About = {
         role: "CTO and Founding Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            /'gīdens/ ("Guidance"), for small business owners who struggle keeping up with daily operations, our AI-Enabled Advisory platform helps save time, make smarter decisions and maximize growth by unlocking the resources exclusive to the world's top investors, entrepreneurs and startups
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Spearheaded the architecture of the platform, including the backend, frontend, and AI services.
           </>,
         ],
         images: [
@@ -152,17 +144,15 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "SingleOps",
+        timeframe: "2022 - 2024",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Lead the conversion of the platform to a modern scalable architecture.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Establish the internal component library and design system.
           </>,
         ],
         images: [],
